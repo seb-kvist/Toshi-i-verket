@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - uppfinnaren_1_0_seb_kvist</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <span class="VarumarkeTitel">TOSHI I VERKET</span>
+                <span class="VarumarkeSlogan">Trädesign för den lokala befolkningen</span>
+                </a>
+            <ul class="navbar-links">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Products" asp-action="Index">Våra Alster</a></li>
+                <li><a asp-controller="AboutMe" asp-action="Index">Om oss</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2024 - Designed and created by Toshi's Master Inc.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* GRUNDLAYOUT-STYLING*/
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #073b37;
+    color: #f8f9fa;
+  }
+  
+header {
+  background-color: #f8f9fa;
+    padding: 13px 20px;
+ }
+  
+nav {
+  Display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+.navbar-brand {
+  text-decoration: none;
+  color: #073b37;
+  display: flex;
+  flex-direction: column;
+  }
+
+.VarumarkeTitel {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.VarumarkeSlogan {
+  font-size: 0.8em; 
+  color: #073b37;
+}
+  
+
+ul.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 28px;
+  }
+  
+ul.navbar-links a {
+  text-decoration: none;
+  color:#073b37;
+  padding: 10px 15px;
+  display: inline-block;
+}
+  
+ul.navbar-links a:hover {
+  background-color: #073b37;
+  color: white;
+  height: 100%;
+  }
+  
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  }
+  
+/* HEMSIDAN */
+.hero-section {
+  text-align:center;
+  height:200px;
+  color: white;
+  padding-top: 70px;
+}
+.p-hero-section {
+  font-size:1.1em;
+  font-style: italic;
+}
+.intro-section {
+  text-align: center;
+}
+.shortcutBtnContainer {
+  text-align: center;
+  margin-top: 80px;
+  background-color:#f9f9f9;
+  padding:60px 15px;
+  width: 100%;
+}
+.shortcutBtn {
+  background-color:#d85d2c;
+  color:white;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:10px;
+  margin:10px;
+}
+.shortcutBtn:hover {
+  background-color: #ff8250; /* Darker shade on hover */
+}
+.socialsLogoContainer {
+  text-align: center; 
+  margin-top: 40px;
+}
+.socialsLogoImg {
+  width: 40px; 
+  margin: 10px; 
+  transition: transform 0.3s ease;
+}
+.socialsLogoImg:hover {
+  transform: scale(1.3);
+}
+
+
+
+/* OM OSS */
+.aboutUsContainer {
+  padding: 10px 20px;
+  color: #073b37;
+  margin-bottom: 80px;
+}
+.aboutUsTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.aboutUsContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.8);
+}
+.artistImage {
+  max-height: 220px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.8);
+}
+
+
+/* VÅRA ALSTER SIDAN */
+.categoryContainer, .productContainer {
+  padding: 30px;
+  text-align: center;
+}
+.categoryTitle {
+  color: white;
+  margin-bottom: 40px;
+}
+.categoryDescription p {
+  color: white;
+  margin-bottom: 40px;
+}
+.categoryGrid, .productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 55px;
+  max-width: 1664px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.categoryCard {
+  background-color: #156a4b;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column; 
+}
+.categoryCard:hover {
+  transform: scale(1.06);
+  background-color: #1c835d;
+}
+.categoryName {
+  font-size: 1.4em;
+  color: #f8f9fa;
+  margin-bottom: 26px;
+  margin-top: 6px;;
+  text-decoration: none;
+}
+.categoryImage img {
+  max-width: 100%; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.categoryCard a {
+  text-decoration: none;
+}
+
+/* ALSTER I KATEGORI*/
+.productCard {
+  background-color: #156a4b;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.productCard:hover {
+  transform: scale(1.06);
+  background-color: #1c835d;
+}
+.productImage {
+  max-width: 100%; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.productName {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.productBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #10968b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 11px;
+}
+.productBtn:hover {
+  background-color: #13bfb0;
+}
+.backBtn {
+  display: inline-block;
+  padding: 10px 100px;
+  background-color: #10968b;;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; 
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.backBtn:hover {
+  background-color: #13bfb0; 
+}
+
+
+/* DETALJER SIDAN */
+.detaljWrapper{
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+}
+.detaljerContainer {
+  max-width: 800px; 
+  text-align: center; 
+}
+.detaljerImage {
+  border-radius: 24px;
+  box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.8);
+}
